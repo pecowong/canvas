@@ -1,0 +1,159 @@
+.BigContainer{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    max-width: 2000px;
+    min-width: 1000px;
+    background-color: black;
+    height: 100vh;
+
+}
+
+
+
+/* top bar function*/
+
+.topBar{
+    background-color: rgb(91, 88, 88);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo{
+    background-color: rgba(149, 147, 147, 0.478);
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.444);
+    font-size: 16px ;
+    font-weight: bold;
+
+}
+
+.topFunction{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ padding: 0px 0px 0px 20px;
+
+}
+
+
+
+.unlock{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 700px;
+    height: 40px;
+    background-color:  rgba(149, 147, 147, 0.478);
+    color: rgba(255, 255, 255, 0.444);
+    width: 220px;
+    
+   
+
+}
+
+
+.adode{
+    color: rgb(146, 150, 154);
+    margin-right: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 233, 237);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.mainBody{
+    display: flex;
+    flex-direction:row;
+    min-width: 1000px;
+    max-width: 2000px;
+
+    min-height: 100vh;
+    
+}
+
+
+
+.sideBar{
+    background-color: rgb(91, 88, 88);
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+
+button{
+    border:none;
+}
+.btnDiv{
+ 
+    
+}
+
+.btnColor{
+    background-color: rgb(99, 92, 92);
+}
+
+
+
+
+
+.workSpace{
+    background-color: rgb(46, 43, 43);
+   flex: 4;
+    padding: 20px;
+    
+}
+
+
+.notFunction{
+    margin-top: 100px ;
+}
+
+
+.canvasDiv{
+    background-color: rgb(246, 229, 229);
+    width: 1200px;
+    height: 700px;
+    border: 2px solid black;
+
+
+}
+
+.canvas{
+    border:2px  rgb(253, 249, 249);
+  
+}
+
+    canvas{
+       position: absolute;
+    }
+
+  
+.rigthSide{
+    background-color: rgb(37, 135, 221);
+    min-width:300px;
+    max-width: 300px;
+    
+}
+

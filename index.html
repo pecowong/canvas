@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Canvas Project for Mouse Events</title>
+
+
+</head>
+<body>
+ <div class="BigContainer">
+
+ <!--top-->       
+ <div class = "topBar">
+    <div class="logo">CANVAS</div>
+    <div class="topFunction">
+        <div class="adode">Adode Photoshop 2022</div> 
+        <button class="unlock">
+            <span>Unlock More Function</span> 
+            <div><i class="fas fa-unlock "></i></div> 
+        </button>
+    </div>
+
+ </div>  
+
+ <!--top
+    
+ <div class="btnDiv">1</div>
+ <div class="btnDiv">2</div>
+ <div class="btnDiv">3</div>
+ <div class="btnDiv">4</div>
+ <div class="btnDiv">5</div>
+ <div class="btnDiv">6</div>
+
+-->   
+
+
+
+ <div class = "mainBody">
+     
+   <div class="sideBar">
+
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="drawing-Sline">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-window-minimize"></i>
+          </span>
+         </button>
+    </div>
+   
+
+
+
+    <div class="btnDiv">
+      <button class="center btnColor" id="drawing-circle">
+        <span style=" color: rgb(201, 195, 194);">
+            <i class="fa-solid fa-circle --fa-inverse" > </i>
+        </span>
+       </button>
+    </div>
+
+   
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="drawing-rectangle">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-square"></i>
+          </span>
+         </button>
+    </div>
+    <!--not work yet-->
+    <div class="btnDiv"> 
+        <button class="center btnColor" id="drawing-triangle">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fa-solid fa-play fa-rotate-270"></i>
+          </span>
+         </button>
+    </div>
+
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="drawing-line">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-pen"></i>
+          </span>
+         </button>
+    </div>
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="erase">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-eraser"></i>
+          </span>
+         </button>
+    </div>
+
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="clear">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-trash"></i>
+          </span>
+         </button>
+    </div>
+
+    <div class="btnDiv">
+        <button class="center btnColor" id="download_image">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-download"></i>
+          </span>
+         </button>
+    </div>
+
+
+    
+    
+
+
+      <!--not work yet-->
+    <div class="btnDiv notFunction">
+        <button class="center btnColor" id="undo-button">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-undo"></i>
+          </span>
+         </button>
+    </div>
+
+
+  <!--not work yet-->
+    <div class="btnDiv">
+        <button class="center btnColor" id="redo-button">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-redo"></i>
+          </span>
+         </button>
+    </div>
+
+  
+
+
+  <!--not work yet-->
+    <div class="btnDiv">
+        <button class="center btnColor" id="drawing-emoji">
+          <span style=" color: rgb(201, 195, 194);">
+            <i class="fas fa-grin-squint"></i>
+          </span>
+         </button>
+    </div>
+    
+      
+  
+      
+
+    </div>
+   
+    <div class="workSpace">
+        <div class="canvasDiv">
+
+      <canvas class="canvas" id="canvas-real" width="1200px" height="800px">Your Browser does not support this </canvas>
+      <canvas class="canvas" id="canvas-draft" width="1200px"  height="800px">Your Browser does not support this </canvas>
+      
+    </div>
+    </div>
+
+
+
+
+</div>   
+</div>
+
+  
+ <!-- button heatsheet-->
+    <!-- <button class="btn btn-primary" id="drawing-rectangle">
+        Drawing Rectangle
+      </button>
+      <button class="btn btn-success" id="drawing-line">Drawing Line</button>
+      <button class="btn btn-danger" id="drawing-circle">Drawing Circle</button>
+      <button class="btn btn-danger" id="clear">Clear</button>
+      <button class="btn btn-danger" id="erase">Erase</button>
+
+
+       -->
+   
+
+
+
+    <script src="https://kit.fontawesome.com/ee1c5b82e3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <script src="./canvas-common.js"></script>
+    <script src="./drawing-line.js"></script>
+    <script src="./drawing-rectangle.js"></script>
+    <script src="./drawing-triangle.js"></script>
+    <script src="./drawing-circle.js"></script>
+    <script src="./clearCanvas.js"></script>
+    <script src="./erase.js"></script>
+    <script src="./download.js"></script>
+    <script src="./undo-redo.js"></script>
+    <script src="./drawing-emoji.js"></script>
+    <script src="./drawing-Sline.js"></script>
+
+   
+
+    
+
+    <script type="text/javascript">
+        $("#drawing-rectangle").click(function(){
+            currentFunction = new DrawingRectangle(contextReal, contextDraft)
+
+        })
+
+        $("#drawing-line").click(function(){
+            currentFunction = new DrawingLine(contextReal, contextDraft)
+        })
+
+
+        $("#drawing-circle").click(function(){
+            currentFunction = new DrawingCircle(contextReal, contextDraft)
+        })
+         $("#erase").click(function(){  
+              currentFunction = new erase (contextReal, contextDraft) 
+         })
+         $("#download_image").click(function(){ 
+              currentFunction = new download_image (contextReal, contextDraft) 
+         })
+         $("#drawing-triangle").click(function(){  
+              currentFunction = new DrawTriangle (contextReal, contextDraft) 
+         })
+         $("#undo-button").click(function(){ 
+              currentFunction = new undo-button (contextReal, contextDraft) 
+         })
+         $("#redo-button").click(function(){  
+              currentFunction = new redo-button (contextReal, contextDraft) 
+         })
+
+         $("#drawing-emoji").click(function(){ 
+              currentFunction = new DrawingEmoji (contextReal, contextDraft) 
+         })
+
+         $("#drawing-Sline").click(function(){ 
+              currentFunction = new DrawingSLine (contextReal, contextDraft) 
+         })
+       
+       
+       
+    </script>
+
+</body>
+</html>
